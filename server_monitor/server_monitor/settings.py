@@ -32,7 +32,7 @@ SECRET_KEY = 'django-insecure-131qrtv@m2%c@p_jyjx6d6q18dlgw%$p=&yg0+%cxg012vmx#1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://dimensionless-beta.vercel.app/','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['dimensionless-beta.vercel.app','dimensionless-9bw8.onrender.com','localhost', '127.0.0.1']
 
 
 # Application definition
