@@ -1,0 +1,85 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+nav {
+  background-color: #4b4d4b;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+/* Main Content Area */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);    /* Three equal columns */
+  grid-auto-rows: auto;                     /* Each row adjusts automatically based on content */
+  gap: 1rem;                                /* Spacing between grid items */
+  padding: 1rem;
+  height: calc(100vh - 4rem);               /* 100vh minus the navbar height */
+  overflow-y: auto;                         /* Enable vertical scrolling if content overflows */
+  overflow-x: hidden;                       /* Hide any horizontal overflow */
+}
+
+/* Spanning Disk/App Usage Across Two Columns */
+.disk-usage {
+  grid-column: span 2;                      /* Occupies two columns */
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Server List Spanning Full Width */
+.server-list {
+  grid-column: 1 / -1;                      /* Spans all columns (full width) */
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Other Component Styling */
+.component {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;  /* Make sure the component takes full width of its grid cell */
+}
+
+/* Hover Effects for Components */
+.component:hover,
+.disk-usage:hover,
+.server-list:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Custom Scrollbar styling */
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #4b4d4b;
+  border-radius: 8px;
+}
+
+.content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}

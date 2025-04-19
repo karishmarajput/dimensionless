@@ -1,0 +1,393 @@
+[
+    {
+      "model": "dashboard.server",
+      "pk": 1,
+      "fields": {
+        "name": "Server 1",
+        "ip": "192.168.1.1",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 2,
+      "fields": {
+        "name": "Server 2",
+        "ip": "192.168.1.2",
+        "status": "maintenance"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 3,
+      "fields": {
+        "name": "Server 3",
+        "ip": "192.168.1.3",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 4,
+      "fields": {
+        "name": "Server 4",
+        "ip": "192.168.1.4",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 5,
+      "fields": {
+        "name": "Server 5",
+        "ip": "192.168.1.5",
+        "status": "maintenance"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 6,
+      "fields": {
+        "name": "Server 6",
+        "ip": "192.168.1.6",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 7,
+      "fields": {
+        "name": "Server 7",
+        "ip": "192.168.1.7",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 8,
+      "fields": {
+        "name": "Server 8",
+        "ip": "192.168.1.8",
+        "status": "maintenance"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 9,
+      "fields": {
+        "name": "Server 9",
+        "ip": "192.168.1.9",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.server",
+      "pk": 10,
+      "fields": {
+        "name": "Server 10",
+        "ip": "192.168.1.10",
+        "status": "active"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 1,
+      "fields": {
+        "server": 1,
+        "alert_type": "critical",
+        "created_at": "2023-10-10T12:00:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 2,
+      "fields": {
+        "server": 2,
+        "alert_type": "medium",
+        "created_at": "2023-10-10T12:05:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 3,
+      "fields": {
+        "server": 3,
+        "alert_type": "low",
+        "created_at": "2023-10-10T12:10:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 4,
+      "fields": {
+        "server": 4,
+        "alert_type": "critical",
+        "created_at": "2023-10-10T12:15:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 5,
+      "fields": {
+        "server": 5,
+        "alert_type": "medium",
+        "created_at": "2023-10-10T12:20:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 6,
+      "fields": {
+        "server": 6,
+        "alert_type": "low",
+        "created_at": "2023-10-10T12:25:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 7,
+      "fields": {
+        "server": 7,
+        "alert_type": "critical",
+        "created_at": "2023-10-10T12:30:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 8,
+      "fields": {
+        "server": 8,
+        "alert_type": "medium",
+        "created_at": "2023-10-10T12:35:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 9,
+      "fields": {
+        "server": 9,
+        "alert_type": "low",
+        "created_at": "2023-10-10T12:40:00Z"
+      }
+    },
+    {
+      "model": "dashboard.alert",
+      "pk": 10,
+      "fields": {
+        "server": 10,
+        "alert_type": "critical",
+        "created_at": "2023-10-10T12:45:00Z"
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 1,
+      "fields": {
+        "server": 1,
+        "timestamp": "2023-10-10T13:00:00Z",
+        "cpu_usage": 50.0,
+        "ram_usage": 60.0,
+        "disk_usage": 70.0,
+        "app_usage": 30.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 2,
+      "fields": {
+        "server": 2,
+        "timestamp": "2023-10-10T13:05:00Z",
+        "cpu_usage": 55.0,
+        "ram_usage": 65.0,
+        "disk_usage": 75.0,
+        "app_usage": 35.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 3,
+      "fields": {
+        "server": 3,
+        "timestamp": "2023-10-10T13:10:00Z",
+        "cpu_usage": 45.0,
+        "ram_usage": 55.0,
+        "disk_usage": 65.0,
+        "app_usage": 25.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 4,
+      "fields": {
+        "server": 4,
+        "timestamp": "2023-10-10T13:15:00Z",
+        "cpu_usage": 60.0,
+        "ram_usage": 70.0,
+        "disk_usage": 80.0,
+        "app_usage": 40.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 5,
+      "fields": {
+        "server": 5,
+        "timestamp": "2023-10-10T13:20:00Z",
+        "cpu_usage": 65.0,
+        "ram_usage": 75.0,
+        "disk_usage": 85.0,
+        "app_usage": 45.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 6,
+      "fields": {
+        "server": 6,
+        "timestamp": "2023-10-10T13:25:00Z",
+        "cpu_usage": 55.0,
+        "ram_usage": 65.0,
+        "disk_usage": 75.0,
+        "app_usage": 35.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 7,
+      "fields": {
+        "server": 7,
+        "timestamp": "2023-10-10T13:30:00Z",
+        "cpu_usage": 50.0,
+        "ram_usage": 60.0,
+        "disk_usage": 70.0,
+        "app_usage": 30.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 8,
+      "fields": {
+        "server": 8,
+        "timestamp": "2023-10-10T13:35:00Z",
+        "cpu_usage": 70.0,
+        "ram_usage": 80.0,
+        "disk_usage": 90.0,
+        "app_usage": 50.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 9,
+      "fields": {
+        "server": 9,
+        "timestamp": "2023-10-10T13:40:00Z",
+        "cpu_usage": 60.0,
+        "ram_usage": 70.0,
+        "disk_usage": 80.0,
+        "app_usage": 40.0
+      }
+    },
+    {
+      "model": "dashboard.resourceusage",
+      "pk": 10,
+      "fields": {
+        "server": 10,
+        "timestamp": "2023-10-10T13:45:00Z",
+        "cpu_usage": 65.0,
+        "ram_usage": 75.0,
+        "disk_usage": 85.0,
+        "app_usage": 45.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 1,
+      "fields": {
+        "server": 1,
+        "timestamp": "2023-10-10T14:00:00Z",
+        "incoming_traffic": 300.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 2,
+      "fields": {
+        "server": 2,
+        "timestamp": "2023-10-10T14:05:00Z",
+        "incoming_traffic": 320.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 3,
+      "fields": {
+        "server": 3,
+        "timestamp": "2023-10-10T14:10:00Z",
+        "incoming_traffic": 340.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 4,
+      "fields": {
+        "server": 4,
+        "timestamp": "2023-10-10T14:15:00Z",
+        "incoming_traffic": 360.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 5,
+      "fields": {
+        "server": 5,
+        "timestamp": "2023-10-10T14:20:00Z",
+        "incoming_traffic": 380.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 6,
+      "fields": {
+        "server": 6,
+        "timestamp": "2023-10-10T14:25:00Z",
+        "incoming_traffic": 400.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 7,
+      "fields": {
+        "server": 7,
+        "timestamp": "2023-10-10T14:30:00Z",
+        "incoming_traffic": 420.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 8,
+      "fields": {
+        "server": 8,
+        "timestamp": "2023-10-10T14:35:00Z",
+        "incoming_traffic": 440.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 9,
+      "fields": {
+        "server": 9,
+        "timestamp": "2023-10-10T14:40:00Z",
+        "incoming_traffic": 460.0
+      }
+    },
+    {
+      "model": "dashboard.networktraffic",
+      "pk": 10,
+      "fields": {
+        "server": 10,
+        "timestamp": "2023-10-10T14:45:00Z",
+        "incoming_traffic": 480.0
+      }
+    }
+  ]
+  
