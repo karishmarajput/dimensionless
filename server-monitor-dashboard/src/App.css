@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -19,21 +18,19 @@ nav {
   padding-left: 1rem;
 }
 
-/* Main Content Area */
 .content {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);    /* Three equal columns */
-  grid-auto-rows: auto;                     /* Each row adjusts automatically based on content */
-  gap: 1rem;                                /* Spacing between grid items */
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
   padding: 1rem;
-  height: calc(100vh - 4rem);               /* 100vh minus the navbar height */
-  overflow-y: auto;                         /* Enable vertical scrolling if content overflows */
-  overflow-x: hidden;                       /* Hide any horizontal overflow */
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* Spanning Disk/App Usage Across Two Columns */
 .disk-usage {
-  grid-column: span 2;                      /* Occupies two columns */
+  grid-column: span 2;
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -41,9 +38,8 @@ nav {
   text-align: center;
 }
 
-/* Server List Spanning Full Width */
 .server-list {
-  grid-column: 1 / -1;                      /* Spans all columns (full width) */
+  grid-column: 1 / -1;
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
@@ -51,17 +47,15 @@ nav {
   text-align: center;
 }
 
-/* Other Component Styling */
 .component {
   background-color: #fff;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 100%;  /* Make sure the component takes full width of its grid cell */
+  width: 100%;
 }
 
-/* Hover Effects for Components */
 .component:hover,
 .disk-usage:hover,
 .server-list:hover {
@@ -70,7 +64,6 @@ nav {
   transition: all 0.3s ease-in-out;
 }
 
-/* Optional: Custom Scrollbar styling */
 .content::-webkit-scrollbar {
   width: 8px;
 }
